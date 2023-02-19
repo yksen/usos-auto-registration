@@ -9,8 +9,8 @@ async fn main() -> WebDriverResult<()> {
     let handles = driver.windows().await?;
     for handle in handles {
         driver.switch_to_window(handle).await?;
-        let title = driver.title().await?;
-        println!("Title: {}", title);
+        let submit_button = driver.find(By::ClassName("submit")).await?;
+        submit_button.click().await?;
     }
 
     Ok(())
