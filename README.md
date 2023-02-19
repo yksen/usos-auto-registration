@@ -1,14 +1,14 @@
-# Requirements
+## Requirements
 - Google Chrome
 - [ChromeDriver](https://chromedriver.chromium.org/downloads)
 
-# Installation
-Clone the repository and build the package with `cargo`
+## Installation
+Clone the repository and build the package with
 ```bash
 cargo build --release
 ```
 
-# Usage
+## Usage
 ### Windows
 Run the **ChromeDriver** executable.
 
